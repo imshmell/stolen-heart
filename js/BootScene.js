@@ -26,23 +26,4 @@ export default class BootScene extends Phaser.Scene {
       this.scene.start("GameScene");
     });
   }
-
-  // document.fonts.ready.then(() => {
-  //   // Показываем стартовую картинку по центру
-  //   this.startImage = this.add.image(512, 512, "start");
-
-  //   // Подсказка для игрока
-  //   this.pressText = this.add
-  //     .text(520, 922, "Press SPACE to start", {
-  //       fontFamily: "Pixelify Sans", // точное имя шрифта из CSS
-  //       fontSize: "32px",
-  //       color: "#ffffff",
-  //     })
-  //     .setOrigin(0.5);
-
-  //   // Событие на пробел
-  //   this.input.keyboard.on("keydown-SPACE", () => {
-  //     this.scene.start("GameScene");
-  //   });
-  // });
 }

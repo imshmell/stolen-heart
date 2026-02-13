@@ -158,7 +158,7 @@ export default class HomeScene extends Phaser.Scene {
       if (this.beeShown && !this.tempSceneActive) {
         if (this.beeTextStage === 1) {
           this.dialogueText.setText(
-            "Тow I am here. You’ve completed all the investigation… Found the clues, solved the code… But most importantly… You found me. And now I can finally tell you… I love you, Agent Martins. Will you be my valentine?"
+            "Now I am here. You’ve completed all the investigation… Found the clues, solved the code… But most importantly… You found me. And now I can finally tell you… I love you, Agent Martins. Will you be my valentine?"
           );
           this.taskText.setText("Press SPACE to continue");
           this.beeTextStage = 2;
