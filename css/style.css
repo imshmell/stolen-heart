@@ -1,4 +1,3 @@
-/* Подключаем локальный шрифт */
 @font-face {
   font-family: "Pixelify Sans";
   src: url("../assets/fonts/PixelifySans.ttf") format("truetype");
