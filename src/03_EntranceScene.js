@@ -5,12 +5,16 @@ import {
   addTaskText,
 } from "./UIHelpers.js";
 
+import { addMobileControls } from "./MobileControls.js";
+
 export default class EntranceScene extends Phaser.Scene {
   constructor() {
     super("EntranceScene");
   }
 
   create() {
+    addMobileControls(this);
+
     this.entranceBGM = this.sound.add("entranceBGM", {
       volume: 0.5,
       loop: true,
