@@ -1,9 +1,13 @@
+import { addMobileControls } from "./MobileControls.js";
+
 export default class BootScene extends Phaser.Scene {
   constructor() {
     super("BootScene");
   }
 
   async create() {
+    addMobileControls(this);
+
     this.startImage = this.add.image(512, 512, "start");
 
     this.pressText = this.add

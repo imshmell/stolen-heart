@@ -1,9 +1,13 @@
+import { addMobileControls } from "./MobileControls.js";
+
 export default class GameScene extends Phaser.Scene {
   constructor() {
     super("GameScene");
   }
 
   create() {
+    addMobileControls(this);
+
     this.commuteBGM = this.sound.add("commuteBGM", {
       volume: 0.5,
       loop: true,
