@@ -7,12 +7,16 @@ import {
 
 import { createPlayer, updatePlayerMovement } from "./PlayerHelper.js";
 
+import { addMobileControls } from "./MobileControls.js";
+
 export default class HomeScene extends Phaser.Scene {
   constructor() {
     super("HomeScene");
   }
 
   create() {
+    addMobileControls(this);
+
     const { width, height } = this.cameras.main;
 
     // --- background music ---

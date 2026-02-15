@@ -16,6 +16,7 @@ export default class BootScene extends Phaser.Scene {
 
     this.input.keyboard.on("keydown-SPACE", () => {
       this.scene.start("GameScene");
+      // this.scene.start("OfficeScene");
     });
   }
 }

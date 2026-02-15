@@ -6,6 +6,7 @@ import {
 } from "./UIHelpers.js";
 
 import { createPlayer, updatePlayerMovement } from "./PlayerHelper.js";
+import { addMobileControls } from "./MobileControls.js";
 
 export default class KitchenScene extends Phaser.Scene {
   constructor() {
@@ -13,6 +14,8 @@ export default class KitchenScene extends Phaser.Scene {
   }
 
   create() {
+    addMobileControls(this);
+
     const { width, height } = this.cameras.main;
 
     // --- background music ---
